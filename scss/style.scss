@@ -124,4 +124,15 @@ section {
       background-color: lighten($primary-color, 69%);
     }
   }
+
+  &.contact-form {
+    padding-top: 8vh;
+    min-height: 80vh;
+  }
+
+  &.contact-info {
+    min-height: 10vh;
+    background-color: red;
+    padding-top: 2vh;
+  }
 }

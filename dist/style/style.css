@@ -7118,3 +7118,10 @@ section {
     section.portfolio .sm-heading,
     section.portfolio .md-heading {
       background-color: #f4f4f4; }
+  section.contact-form {
+    padding-top: 8vh;
+    min-height: 80vh; }
+  section.contact-info {
+    min-height: 10vh;
+    background-color: red;
+    padding-top: 2vh; }
