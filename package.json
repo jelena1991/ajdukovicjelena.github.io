@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o public/style/ --recursive",
-    "deploy": "gh-pages -d public"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/jelena1991/ajdukovicjelena.github.io/issues"
   },
-  "homepage": "https://jelena1991.github.io/portfolio",
+  "homepage": "https://github.com/jelena1991/ajdukovicjelena.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.1.1",
