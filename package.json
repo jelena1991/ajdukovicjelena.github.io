@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o public/style/ --recursive",
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelena1991/ajdukovicjelena.github.io.git"
+  },
+  "keywords": [
+    "ajdukovicjelena",
+    "portfolio",
+    "resume"
+  ],
+  "author": "Jelena Ajdukovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jelena1991/ajdukovicjelena.github.io/issues"
+  },
+  "homepage": "https://github.com/jelena1991/ajdukovicjelena.github.io/portfolio",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0"
+  }
+}
