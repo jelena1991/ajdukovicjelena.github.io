@@ -7094,18 +7094,21 @@ header {
   header h1 {
     padding-top: 30vh; }
 
-main {
+nav {
+  min-height: 6vh; }
+
+section {
   min-height: 100vh;
   background-color: white;
   color: #444; }
-  main .md-heading,
-  main .sm-heading {
+  section .md-heading,
+  section .sm-heading {
     margin: 0;
     text-align: left;
     padding: 0.2rem 1rem;
     background-color: white; }
-  main .sm-heading {
+  section .sm-heading {
     color: rgba(73, 73, 73, 0.5); }
-
-.about-me {
-  padding-top: 13vh; }
+  section.about-me {
+    padding-top: 13vh;
+    min-height: 94vh; }

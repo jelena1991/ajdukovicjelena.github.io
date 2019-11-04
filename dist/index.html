@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container-fluid">
-      <header class="row bg-img">
+      <header class="row bg-img" id="home">
         <div class="col">
           <div class="container">
             <div class="row">
@@ -27,8 +27,34 @@
           </div>
         </div>
       </header>
+      <nav class="row border border-warning">
+        <div class="container">
+          <div class="row">
+            <div class="col text-left">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <main class="row">
-        <section class="col-12 about-me">
+        <section class="col-12 about-me" id="about-me">
           <div class="container">
             <div class="row text-left">
               <div class="col-6">
@@ -53,6 +79,20 @@
                   itaque ipsum qui distinctio minima praesentium sint. Minima,
                   unde. Facilis quis reprehenderit quos.
                 </p>
+                <div>
+                  <a href="#">
+                    <i class="fab fa-gitlab fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-gmail fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
                 <a href="#" class="button-secondary">Download CV</a>
               </div>
             </div>
