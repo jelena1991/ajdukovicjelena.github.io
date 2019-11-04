@@ -111,7 +111,17 @@ section {
     color: rgba(lighten($primary-color, 2), 0.5);
   }
   &.about-me {
-    padding-top: 13vh;
+    padding-top: 8vh;
     min-height: 94vh;
+  }
+
+  &.portfolio {
+    padding-top: 8vh;
+    background-color: lighten($primary-color, 69%);
+
+    .sm-heading,
+    .md-heading {
+      background-color: lighten($primary-color, 69%);
+    }
   }
 }
