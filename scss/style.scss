@@ -90,7 +90,11 @@ header {
   }
 }
 
-main {
+nav {
+  min-height: 6vh;
+}
+
+section {
   min-height: 100vh;
   background-color: lighten($primary-color, 100%);
   color: $primary-color;
@@ -106,8 +110,8 @@ main {
   .sm-heading {
     color: rgba(lighten($primary-color, 2), 0.5);
   }
-}
-
-.about-me {
-  padding-top: 13vh;
+  &.about-me {
+    padding-top: 13vh;
+    min-height: 94vh;
+  }
 }
