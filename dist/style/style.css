@@ -186,15 +186,14 @@ label {
   display: inline-block;
   margin-bottom: 0.5rem; }
 
-button {
+button, button:hover {
   border-radius: 0; }
 
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color; }
 
-input,
-button,
+input, button, button:hover,
 select,
 optgroup,
 textarea {
@@ -203,18 +202,18 @@ textarea {
   font-size: inherit;
   line-height: inherit; }
 
-button,
+button, button:hover,
 input {
   overflow: visible; }
 
-button,
+button, button:hover,
 select {
   text-transform: none; }
 
 select {
   word-wrap: normal; }
 
-button,
+button, button:hover,
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -226,7 +225,7 @@ button:not(:disabled),
 [type="submit"]:not(:disabled) {
   cursor: pointer; }
 
-button::-moz-focus-inner,
+button::-moz-focus-inner, button:hover::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
@@ -7047,7 +7046,7 @@ h3 {
   h1.md-heading,
   h2.md-heading,
   h3.md-heading {
-    font-size: 2.8rem; }
+    font-size: 2.2rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -7076,6 +7075,7 @@ a:hover {
     a.button-secondary:hover,
     a:hover.button.button:hover,
     a.button-secondary:hover:hover {
+      border: #eece1a;
       color: #444;
       background-color: #eece1a;
       transition: all 0.5s ease-out; }
@@ -7086,14 +7086,28 @@ a:hover {
         transform: rotate(90deg); }
     a.button-secondary,
     a:hover.button-secondary {
-      line-height: 4;
+      padding: 0.5rem 1rem;
+      line-height: 2;
       color: #444;
       background-color: #eece1a; }
     a.button-secondary:hover,
     a:hover.button-secondary:hover {
-      color: #eece1a;
+      transition: all 0.5s ease-out;
+      padding: 0.5rem 1rem;
       background-color: white;
-      border-color: #444; }
+      border: #444 1px solid; }
+
+button, button:hover {
+  line-height: 2;
+  color: #444;
+  background-color: #eece1a;
+  border-radius: 4px;
+  padding: 0.4rem 2rem; }
+
+button:hover {
+  transition: all 0.5s ease-out;
+  background-color: white;
+  border: #444 1px solid; }
 
 header {
   min-height: 100vh;
@@ -7114,12 +7128,17 @@ header {
     opacity: 0.2; }
 
 nav {
-  min-height: 6vh; }
+  min-height: 6vh;
+  border-bottom: solid #eece1a 4px; }
+  nav .nav-link {
+    color: white;
+    line-height: 3; }
 
 section {
   min-height: 100vh;
   background-color: white;
-  color: #444; }
+  color: #444;
+  padding-top: 8vh; }
   section .md-heading,
   section .sm-heading {
     margin: 0;
@@ -7129,18 +7148,29 @@ section {
   section .sm-heading {
     color: rgba(73, 73, 73, 0.5); }
   section.about-me {
-    padding-top: 8vh;
-    min-height: 94vh; }
+    min-height: 95vh; }
+    section.about-me .links {
+      color: #444;
+      margin-right: 0.6rem; }
+    section.about-me .links:hover {
+      transition: all 0.5s ease-out;
+      color: #eece1a; }
+    section.about-me .text {
+      line-height: 1.8; }
+      section.about-me .text span {
+        font-weight: 800; }
   section.portfolio {
-    padding-top: 8vh;
     background-color: #f4f4f4; }
     section.portfolio .sm-heading,
     section.portfolio .md-heading {
       background-color: #f4f4f4; }
   section.contact-form {
-    padding-top: 8vh;
     min-height: 80vh; }
   section.contact-info {
     min-height: 10vh;
     background-color: red;
     padding-top: 2vh; }
+
+.programming-language {
+  width: 7%;
+  margin: 1%; }

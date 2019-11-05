@@ -5,6 +5,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../image/background.jpg);
 $background-opacity: 0.9;
+$section-padding: 8vh;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -39,7 +40,7 @@ h3 {
   }
 
   &.md-heading {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   &.sm-heading {
@@ -67,6 +68,7 @@ a:hover {
     background-color: rgba(lighten($primary-color, 2), 0.5);
 
     &.button:hover {
+      border: $secondary-color;
       color: $primary-color;
       background-color: $secondary-color;
       @include easeOut;
@@ -79,18 +81,36 @@ a:hover {
 
     &-secondary {
       @extend .button;
-      line-height: 4;
+      padding: 0.5rem 1rem;
+      line-height: 2;
       color: $primary-color;
       background-color: $secondary-color;
     }
 
     &-secondary:hover {
       @extend .button;
-      color: $secondary-color;
+      @include easeOut;
+      padding: 0.5rem 1rem;
       background-color: lighten($primary-color, 100%);
-      border-color: $primary-color;
+      border: $primary-color 1px solid;
     }
   }
+}
+
+button {
+  @extend .button;
+  line-height: 2;
+  color: $primary-color;
+  background-color: $secondary-color;
+  border-radius: 4px;
+  padding: 0.4rem 2rem;
+}
+
+button:hover {
+  @extend button;
+  @include easeOut;
+  background-color: lighten($primary-color, 100%);
+  border: $primary-color 1px solid;
 }
 
 header {
@@ -116,12 +136,19 @@ header {
 
 nav {
   min-height: 6vh;
+  border-bottom: solid $secondary-color 4px;
+
+  .nav-link {
+    color: lighten($primary-color, 100%);
+    line-height: 3;
+  }
 }
 
 section {
   min-height: 100vh;
   background-color: lighten($primary-color, 100%);
   color: $primary-color;
+  padding-top: $section-padding;
 
   .md-heading,
   .sm-heading {
@@ -135,12 +162,28 @@ section {
     color: rgba(lighten($primary-color, 2), 0.5);
   }
   &.about-me {
-    padding-top: 8vh;
-    min-height: 94vh;
+    min-height: 95vh;
+
+    .links {
+      color: $primary-color;
+      margin-right: 0.6rem;
+    }
+
+    .links:hover {
+      @include easeOut;
+      color: $secondary-color;
+    }
+
+    .text {
+      line-height: 1.8;
+
+      span {
+        font-weight: 800;
+      }
+    }
   }
 
   &.portfolio {
-    padding-top: 8vh;
     background-color: lighten($primary-color, 69%);
 
     .sm-heading,
@@ -150,7 +193,6 @@ section {
   }
 
   &.contact-form {
-    padding-top: 8vh;
     min-height: 80vh;
   }
 
@@ -159,4 +201,9 @@ section {
     background-color: red;
     padding-top: 2vh;
   }
+}
+
+.programming-language {
+  width: 7%;
+  margin: 1%;
 }
