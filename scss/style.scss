@@ -6,6 +6,10 @@ $show-home-image: true;
 $home-image: url(../image/background.jpg);
 $background-opacity: 0.9;
 
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -60,10 +64,17 @@ a:hover {
     padding: 0.8rem 1rem;
     line-height: 1.3;
     border-radius: 5px;
+    background-color: rgba(lighten($primary-color, 2), 0.5);
 
     &.button:hover {
       color: $primary-color;
       background-color: $secondary-color;
+      @include easeOut;
+
+      i {
+        @include easeOut;
+        transform: rotate(90deg);
+      }
     }
 
     &-secondary {
