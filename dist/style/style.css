@@ -7166,10 +7166,20 @@ section {
       background-color: #f4f4f4; }
   section.contact-form {
     min-height: 80vh; }
+    section.contact-form .form-control:focus {
+      border-color: white;
+      box-shadow: 0 0 0 0.2rem rgba(68, 68, 68, 0.3); }
   section.contact-info {
     min-height: 10vh;
-    background-color: red;
-    padding-top: 2vh; }
+    background-color: #444;
+    color: white;
+    padding-top: 0; }
+    section.contact-info h3 {
+      font-size: 1.2rem; }
+    section.contact-info p {
+      color: #c4c4c4; }
+    section.contact-info .rigts {
+      border-top: #5e5e5e 1px solid; }
 
 .programming-language {
   width: 7%;

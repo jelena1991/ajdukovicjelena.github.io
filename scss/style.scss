@@ -194,12 +194,30 @@ section {
 
   &.contact-form {
     min-height: 80vh;
+
+    .form-control:focus {
+      border-color: lighten($primary-color, 90%);
+      box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.3);
+    }
   }
 
   &.contact-info {
     min-height: 10vh;
-    background-color: red;
-    padding-top: 2vh;
+    background-color: $primary-color;
+    color: lighten($primary-color, 100%);
+    padding-top: 0;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      color: lighten($primary-color, 50%);
+    }
+
+    .rigts {
+      border-top: lighten($primary-color, 10%) 1px solid;
+    }
   }
 }
 
