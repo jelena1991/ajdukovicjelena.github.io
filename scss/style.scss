@@ -191,20 +191,21 @@ section {
       background-color: lighten($primary-color, 69%);
     }
 
-    .img {
-      background-color: $primary-color;
-      border-radius: 5px;
-      padding: 0;
-      img {
-        border: 1px lighten($primary-color, 60%) solid;
-        border-radius: 5px;
+    .card {
+      box-shadow: 2px 2px 5px 0px lighten($primary-color, 65%);
+      h5 {
+        color: $primary-color;
+        font-weight: 600;
       }
 
-      img:hover {
-        border: 1px lighten($primary-color, 60%) solid;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px 0px lighten($primary-color, 40%);
-        opacity: 0.3;
+      i {
+        color: lighten($primary-color, 20%);
+      }
+
+      i:hover {
+        @include easeOut;
+        color: $primary-color;
+        font-size: 1.8rem;
       }
     }
   }
