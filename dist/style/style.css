@@ -7038,12 +7038,12 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0 5rem;
+  margin: 0;
   font-weight: 400; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 2rem; }
   h1.md-heading,
   h2.md-heading,
   h3.md-heading {
@@ -7051,6 +7051,7 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background-color: rgba(73, 73, 73, 0.5); }
@@ -7065,7 +7066,7 @@ a:hover {
   a.button-secondary:hover,
   a:hover.button,
   a.button-secondary:hover {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #eece1a;
     border: white solid 1px;
     padding: 0.8rem 1rem;
@@ -7097,6 +7098,9 @@ a:hover {
       padding: 0.5rem 1rem;
       background-color: white;
       border: #444 1px solid; }
+
+.portret-img {
+  width: 100%; }
 
 button {
   padding: 0.4rem 2rem;
@@ -7153,7 +7157,7 @@ section {
     min-height: 95vh; }
     section.about-me .links {
       color: #444;
-      margin-right: 0.6rem; }
+      margin-right: 0.2rem; }
     section.about-me .links:hover {
       transition: all 0.5s ease-out;
       color: #eece1a; }
@@ -7197,3 +7201,46 @@ section {
 .programming-language {
   width: 7%;
   margin: 1%; }
+
+@media (min-width: 576px) {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 2rem; }
+  .button, a.button-secondary,
+  a.button-secondary:hover {
+    font-size: 1.3rem; }
+  .links {
+    margin-right: 0.6rem; } }
+
+@media (min-width: 768px) {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 5rem; } }
+
+@media (min-width: 992px) {
+  h1,
+  h2,
+  h3 {
+    margin: 0 5rem; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 5rem; }
+  .contact-info h3 {
+    margin: 0; } }
+
+@media (min-width: 1200px) {
+  h1,
+  h2,
+  h3 {
+    margin: 0 5rem; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 6rem; } }
