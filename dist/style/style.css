@@ -7103,7 +7103,8 @@ button {
   line-height: 2;
   background-color: #eece1a;
   border: #eece1a 1px solid;
-  color: #444; }
+  color: #444;
+  margin-bottom: 50px; }
 
 button:hover {
   transition: all 0.5s ease-out;
